@@ -1,0 +1,8 @@
+<h1>Stylists</h1>
+
+<ul>
+  @foreach (var stylist in Model)
+  {
+    <li>@stylist.GetStylistDetails()</li>
+  }
+</ul>
