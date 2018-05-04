@@ -13,7 +13,7 @@ namespace HairSalon.Tests
         }
         public ClientTests()
         {
-            DBConfiguration.ConnectionString = "server=localhost;user id=root;password=;port=3306;database=hair_salon;";
+            DBConfiguration.ConnectionString = "server=localhost;user id=root;password="";port=3306;database=hair_salon;";
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace HairSalon.Tests
     {
         public StylistTests()
         {
-            DBConfiguration.ConnectionString = "server=localhost;user id=root;password=;port=3306;database=hair_salon;";
+            DBConfiguration.ConnectionString = "server=localhost;user id=root;password="";port=3306;database=hair_salon;";
         }
 
         [TestMethod]

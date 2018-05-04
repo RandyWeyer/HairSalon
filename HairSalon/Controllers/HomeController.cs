@@ -39,14 +39,14 @@ namespace HairSalon.Controllers
         return View(allStylists);
          }
 
-        // [HttpPost("/submit")]
-        // public ActionResult Submit()
-        // {
-        //   int newClientlist = int.Parse(Request.Form["client-stylist"]);
-        //   string newClientName = Request.Form["restaurant-name"];
-        //   Client newClient = new Client(newClientName, newClientStylist);
-        //   newClient.Save(); //This line doesn't work
-        //   return RedirectToAction();
-        // }
+        [HttpPost("/submit")]
+        public ActionResult Submit()
+        {
+          int newClientStylist = int.Parse(Request.Form["client-stylist"]);
+          string newClientName = Request.Form["restaurant-name"];
+          Client newClient = new Client(newClientName, newClientStylist);
+          newClient.Save(); //This line doesn't work
+          return View("Index");
+        }
     }
 }
